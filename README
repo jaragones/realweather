@@ -1,0 +1,9 @@
+NAME: Apparent & Real weather
+DEVELOPER: Jordi Aragones-Vilella
+Date: 21.08.2012
+
+DESCRIPTION: I had enough of real temperatures, this iOS app give you the apparent temperature. The apparent temperature is the one that you feel in your body.
+
+NOTES: To run the code you MUST add:
+	
+	- a valid key for World Weather online API (free.worldweatheronline.com)
