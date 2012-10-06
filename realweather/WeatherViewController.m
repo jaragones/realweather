@@ -83,7 +83,9 @@
     locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters; // 100 m
     [locationManager startUpdatingLocation];
     
-    NSString *url = [NSString stringWithFormat:@"http://free.worldweatheronline.com/feed/weather.ashx?q=%f,%f&format=xml&num_of_days=4&key=xxxxxxxxxxxx", locationManager.location.coordinate.latitude, locationManager.location.coordinate.longitude];
+#error >> You must add your API key into this point <<    
+    
+    NSString *url = [NSString stringWithFormat:@"http://free.worldweatheronline.com/feed/weather.ashx?q=%f,%f&format=xml&num_of_days=4&key=xxxx", locationManager.location.coordinate.latitude, locationManager.location.coordinate.longitude];
     
     // Retrieving data from Global Weather Service
     ICB_WeatherConditions *weather = [[ICB_WeatherConditions alloc] initWithQuery:url];  

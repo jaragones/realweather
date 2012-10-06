@@ -16,7 +16,7 @@
 // Method to read from an URL a XML file and load its data into Dayforecast object
 -(ICB_WeatherConditions *) initWithQuery:(NSString *)query {
     
-    if (self = [super init]) {            
+    if (self = [super init]) {
         CXMLDocument *parser = [[CXMLDocument alloc] initWithContentsOfURL:[NSURL URLWithString:query] options:0 error:nil];
         
         forecast = [[NSMutableArray alloc] init];
